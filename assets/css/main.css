@@ -1,16 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
 
-/*
-	Alpha by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-/* Reset */
-
-/* Based on meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain) */
-
 	html, body, div, span, applet, object,
 	iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 	pre, a, abbr, acronym, address, big, cite,
@@ -28,6 +18,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		scroll-behavior: smooth;
 	}
 
 	article, aside, details, figcaption, figure,
@@ -122,7 +113,6 @@
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
 		color: #e89980;
 		text-decoration: none;
 	}
@@ -3895,4 +3885,48 @@
 				padding: 2.5em 1em 3em 1em;
 			}
 
+	}
+
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #333;
+		color: white;
+		padding: 10px 20px;
+		position: fixed; /* Makes the navbar fixed at the top */
+		width: 100%; /* Ensures the navbar extends full width */
+		box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adds subtle shadow for depth */
+		z-index: 1000; /* Ensures navbar stays on top */
+		font-family: "Source Sans Pro", sans-serif;
+	}
+	
+	.navbar a {
+		color: white;
+		padding: 8px 15px;
+		text-decoration: none;
+		font-size: 16px;
+	}
+	
+	.navbar a:hover {
+		background-color: #ddd;
+		color: black;
+	}
+	
+	.logo {
+		font-size: 20px; /* Adjust logo text size */
+		font-weight: bold;
+	}
+	
+	.logo img {
+		vertical-align: middle;
+		height: 40px; /* Reducing logo image height */
+		width: auto;
+	}
+	
+	.content-section {
+		padding-top: 60px; /* Adds padding to account for fixed navbar */
+		height: 600px; /* Adjust height as needed */
+		padding: 20px;
+		border: none; /* Removes border for a cleaner look */
 	}
